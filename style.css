@@ -1,0 +1,14 @@
+
+:root{--bg:#06101d;--panel:#0b1829;--gold:#d5b269;--text:#f5efe2;--muted:#adb7c5;--line:#564a30}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 25% 0,#14233d,#06101d 40%,#030812);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif}
+main{max-width:1080px;margin:auto;padding:20px 14px 60px}.panel{background:rgba(8,18,33,.94);border:1px solid var(--line);border-radius:22px;padding:20px;margin-top:18px;box-shadow:0 20px 55px #0006}
+.hero{text-align:center;padding:28px 18px}.hero h1{font-family:serif;font-size:clamp(2rem,7vw,4rem);letter-spacing:.11em;margin:.2em}.hero p{color:var(--muted);line-height:1.8}
+.months{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.months button,.chooser button{border:1px solid var(--line);background:#0d1a2c;color:var(--text);border-radius:12px;padding:10px 6px;cursor:pointer}.months button.active,.chooser button.active{border-color:var(--gold);box-shadow:0 0 18px #d5b26955;background:#172842}
+.months small,.chooser small{display:block;color:var(--muted);font-size:.67rem;margin-top:3px}
+.sign-view{display:grid;grid-template-columns:minmax(260px,36%) 1fr;gap:18px;align-items:start}.sign-view img{width:100%;border-radius:16px;border:1px solid #806a3c}.sign-view h2{font-family:serif;font-size:2.2rem;margin:.1em 0}.meta{color:var(--gold)}.catch{font-weight:700;color:#ffe9aa}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.box{padding:13px;border:1px solid #384253;border-radius:13px;background:#091523;line-height:1.75}.box b,.accent{color:var(--gold)}
+.compat-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.chooser h3{text-align:center;color:var(--gold)}.chooser .buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.results{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.result{border:1px solid #444d5b;border-radius:15px;padding:15px;text-align:center;background:#091523}.score{font-family:serif;font-size:2.4rem;color:#f1d58d}.result p{font-size:.88rem;line-height:1.65;color:#d7dde5}
+.parent-results{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}.today-top{text-align:center;color:var(--gold);line-height:1.7}.today-fortunes{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0}.luck{font-family:serif;font-size:1.5rem}.badge{display:inline-block;padding:5px 9px;border-radius:999px;margin:4px;background:#182338;border:1px solid #5b5260}.daily-lucky{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+footer{text-align:center;color:#8792a0;font-size:.74rem;line-height:1.7;margin-top:18px}a{color:#e0c37a}
+@media(max-width:760px){.months{grid-template-columns:repeat(4,1fr)}.sign-view,.compat-grid{grid-template-columns:1fr}.grid,.results,.parent-results{grid-template-columns:1fr}.today-fortunes{grid-template-columns:repeat(2,1fr)}}
